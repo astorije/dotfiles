@@ -1,0 +1,6 @@
+# Atom symbol files
+.tags_swap
+tags
+
+# Damn Mac OS X file
+.DS_Store
