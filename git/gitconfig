@@ -7,9 +7,12 @@
 [color]
   ui = true
 [alias]
+  am = commit --amend --no-edit
   ap = add -p
   ci = commit -m
   co = checkout
+  ra = rebase --abort
+  rc = rebase --continue
   st = status
   staged = diff --staged
   cht = config user.email "jeremie@cloudhealthtech.com"
