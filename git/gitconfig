@@ -7,8 +7,8 @@
 [color]
   ui = true
 [alias]
-  am = commit --amend --no-edit
   ap = add -p
+  ca = commit --amend --no-edit
   ci = commit -m
   co = checkout
   ra = rebase --abort
