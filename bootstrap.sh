@@ -4,5 +4,5 @@ set -e # Stop execution at first error
 
 dotfiles="$PWD"
 
-ln -s ${dotfiles}/git/gitconfig ~/.gitconfig
-ln -s ${dotfiles}/git/gitignore_global ~/.gitignore_global
+ln -sf ${dotfiles}/git/gitconfig ~/.gitconfig
+ln -sf ${dotfiles}/git/gitignore_global ~/.gitignore_global
