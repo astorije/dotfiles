@@ -10,9 +10,12 @@
   ap = add -p
   ca = commit --amend --no-edit
   ci = commit -m
+  cb = "!f() { git checkout -b astorije/$@; }; f"
+  cm = checkout master
   co = checkout
   ra = rebase --abort
   rc = rebase --continue
+  ri = rebase --interactive
   st = status
   staged = diff --staged
   cht = config user.email "jeremie@cloudhealthtech.com"
