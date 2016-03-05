@@ -7,4 +7,6 @@
 # -h Use human-readable units
 # -l List in long format
 alias ll="ls -lhAF"
-alias ls='ls -F'
+alias ls="ls -F"
+
+alias g=git
