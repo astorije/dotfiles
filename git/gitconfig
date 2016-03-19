@@ -13,9 +13,14 @@
   cb = "!f() { git checkout -b astorije/$@; }; f"
   cm = checkout master
   co = checkout
+
+  # Rebase
+  rb = rebase
   ra = rebase --abort
   rc = rebase --continue
   ri = rebase --interactive
+  rbm = rebase master
+
   st = status
   staged = diff --staged
   cht = config user.email "jeremie@cloudhealthtech.com"
