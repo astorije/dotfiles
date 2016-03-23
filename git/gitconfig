@@ -14,6 +14,11 @@
   cm = checkout master
   co = checkout
 
+  # Branch
+  delete-merged = "!git branch --merged | grep -v \"^\\s*master$\" | grep -v \"\\*\" | xargs -n 1 git branch -d"
+  dm = !git delete-merged
+  pru = remote prune origin
+
   # Rebase
   rb = rebase
   ra = rebase --abort
