@@ -8,13 +8,24 @@
 [instaweb]
   httpd = apache2 -f
 [push]
-  default = simple
+  default = current
 [color]
   ui = true
 [alias]
+
+  pl = pull
+  ph = push
+  phu = push -u
+  phf = push --force
+
+  # Staging
   ap = add -p
+
+  # Commit
   ca = commit --amend --no-edit
   ci = commit -m
+
+  # Checkout
   cb = "!f() { git checkout -b astorije/$@; }; f"
   cm = checkout master
   co = checkout
