@@ -1,5 +1,10 @@
 [user]
   name = Jérémie Astori
+[branch]
+  # When a new branch is created with git branch or git checkout that tracks
+  # another branch, this variable tells Git to set up pull to rebase instead of
+  # merge. When always, rebase will be set to true for all tracking branches.
+  autosetuprebase = always
 [instaweb]
   httpd = apache2 -f
 [push]
