@@ -6,7 +6,11 @@
 #    FIFO.
 # -h Use human-readable units
 # -l List in long format
-alias ll="ls -lhAF"
-alias ls="ls -F"
+alias ll='ls -lhAF --color=auto'
+alias ls='ls -F --color=auto'
 
 alias g=git
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
