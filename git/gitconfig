@@ -8,8 +8,6 @@
   # another branch, this variable tells Git to set up pull to rebase instead of
   # merge. When always, rebase will be set to true for all tracking branches.
   autosetuprebase = always
-[instaweb]
-  httpd = apache2 -f
 [push]
   default = current
 [color]
