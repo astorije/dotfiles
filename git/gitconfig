@@ -1,5 +1,8 @@
 [user]
   name = Jérémie Astori
+  # Forces user.email and user.name configuration variables to always be set
+  # when committing, useful when using multiple email addresses.
+  useconfigonly = true
 [branch]
   # When a new branch is created with git branch or git checkout that tracks
   # another branch, this variable tells Git to set up pull to rebase instead of
@@ -12,6 +15,9 @@
 [color]
   ui = true
 [alias]
+  # Identities
+  cht = config user.email "jeremie@cloudhealthtech.com"
+  perso = config user.email "jeremie@astori.fr"
 
   pl = pull
   ph = push
@@ -44,8 +50,7 @@
 
   st = status
   staged = diff --staged
-  cht = config user.email "jeremie@cloudhealthtech.com"
-  perso = config user.email "jeremie@astori.fr"
+
   graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 [core]
   editor = atom --wait
