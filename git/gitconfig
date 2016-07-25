@@ -10,8 +10,6 @@
   autosetuprebase = always
 [push]
   default = current
-[color]
-  ui = true
 [alias]
   # Identities
   cht = config user.email "jeremie@cloudhealthtech.com"
@@ -53,6 +51,30 @@
 [core]
   editor = atom --wait
   excludesfile = ~/.gitignore_global
-[credential]
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[diff]
+  # Enables a heuristic to make the patch output more readable by using a blank
+  # line as a strong hint that the contents before and after it belong to
+  # logically separate units. It is still experimental.
+  compactionHeuristic = true
+[credential "https://github.com"]
   helper = cache --timeout=21600
   username = astorije
+[diff-so-fancy]
+  # Do not color the first block of an empty line.
+  markEmptyLines = false
+  # Do not remove the pesky + or - at line-start.
+  stripLeadingSymbols = false
+[interactive]
+  # Use this color filter in `rebase --interactive` and `add --patch`
+  diffFilter = diff-so-fancy
+[color "diff"]
+  meta = yellow # Default is white
+  frag = magenta # Default is cyan
+[color "diff-highlight"]
+  oldNormal = red
+  newNormal = green
+  oldHighlight = "#dd0000 #550000" # Default is red reverse
+  newHighlight = "green #004400" # Default is green reverse
+[color "status"]
+  untracked = yellow # Default is red
