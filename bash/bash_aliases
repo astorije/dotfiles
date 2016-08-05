@@ -9,8 +9,11 @@
 alias ll='ls -lhAF'
 alias ls='ls -F'
 
-alias g=git
-
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+# Useful to pretty-print outputs from JSON APIs.
+# Usage: `curl "https://example.com/api/" | json`
+# See https://docs.python.org/2.7/library/json.html
+alias json='python -m json.tool'
