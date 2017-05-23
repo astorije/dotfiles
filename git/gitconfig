@@ -3,6 +3,8 @@
   # Forces user.email and user.name configuration variables to always be set
   # when committing, useful when using multiple email addresses.
   useconfigonly = true
+[commit]
+	gpgsign = true
 [branch]
   # When a new branch is created with git branch or git checkout that tracks
   # another branch, this variable tells Git to set up pull to rebase instead of
@@ -12,8 +14,8 @@
   default = current
 [alias]
   # Identities
-  cht = config user.email "jeremie@cloudhealthtech.com"
-  perso = config user.email "jeremie@astori.fr"
+  cht = "!git config user.email \"jeremie@cloudhealthtech.com\" && git config user.signingkey 2262DE79D3DD50EF"
+  perso = "!git config user.email \"jeremie@astori.fr\" && git config user.signingkey B9A4F245CD67BDE8"
 
   pl = pull
   ph = push
