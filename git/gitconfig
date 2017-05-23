@@ -4,7 +4,7 @@
   # when committing, useful when using multiple email addresses.
   useconfigonly = true
 [commit]
-	gpgsign = true
+  gpgsign = true
 [branch]
   # When a new branch is created with git branch or git checkout that tracks
   # another branch, this variable tells Git to set up pull to rebase instead of
