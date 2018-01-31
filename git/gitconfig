@@ -20,7 +20,7 @@
   pl = pull
   ph = push
   phu = push -u
-  phf = push --force
+  phf = push --force-with-lease
 
   # Staging
   ap = add -p
