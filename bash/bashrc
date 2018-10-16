@@ -1,0 +1,21 @@
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+# ... or force ignoredups and ignorespace
+HISTCONTROL=ignoreboth
+
+# Display git repo state and branch name in terminal prompt
+GIT_PS1_SHOWDIRTYSTATE=true
+export PS1='\[\e[1;34m\]\u@\h\[\e[0;39m\]:\[\e[1;33m\]\w\[\e[1;31m\]$(__git_ps1 " (%s)")\[\e[0;39m\] $ '
+
+# Set the terminal tab title to be the name of the current directory (~/foo/bar becomes "bar")
+PROMPT_COMMAND='echo -ne "\033]0; ${PWD##*/}\007"'
+
+# Bash completion for Homebrew
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+# Alias definitions.
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
