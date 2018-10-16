@@ -3,6 +3,9 @@
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoreboth
 
+# Enable colors for `ls`
+export CLICOLOR=1
+
 # Display git repo state and branch name in terminal prompt
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\e[1;34m\]\u@\h\[\e[0;39m\]:\[\e[1;33m\]\w\[\e[1;31m\]$(__git_ps1 " (%s)")\[\e[0;39m\] $ '
