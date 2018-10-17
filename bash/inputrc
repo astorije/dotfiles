@@ -1,0 +1,5 @@
+set completion-ignore-case on
+set show-all-if-ambiguous on
+
+"\e\e[D": backward-word
+"\e\e[C": forward-word

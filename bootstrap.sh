@@ -9,6 +9,7 @@ brew install bash-completion diff-so-fancy git gnupg pinentry-mac
 ln -sf ${dotfiles}/bash/bash_aliases ~/.bash_aliases
 ln -sf ${dotfiles}/bash/bashrc ~/.bashrc
 ln -sf ${dotfiles}/bash/bash_profile ~/.bash_profile
+ln -sf ${dotfiles}/bash/inputrc ~/.inputrc
 
 # Git
 ln -sf ${dotfiles}/git/gitconfig ~/.gitconfig
