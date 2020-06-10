@@ -68,9 +68,6 @@
   markEmptyLines = false
   # Do not remove the pesky + or - at line-start.
   stripLeadingSymbols = false
-[interactive]
-  # Use this color filter in `rebase --interactive` and `add --patch`
-  diffFilter = diff-so-fancy
 [color "diff"]
   meta = yellow # Default is white
   frag = magenta # Default is cyan
