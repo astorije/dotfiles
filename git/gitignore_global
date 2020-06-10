@@ -1,6 +1,5 @@
-# Atom symbol files
-.tags_swap
-tags
+# VS Code files
+.vscode
 
 # Damn Mac OS X file
 .DS_Store
