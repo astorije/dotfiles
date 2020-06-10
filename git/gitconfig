@@ -78,3 +78,5 @@
   newHighlight = "green #004400" # Default is green reverse
 [color "status"]
   untracked = yellow # Default is red
+[credential]
+	helper = osxkeychain
