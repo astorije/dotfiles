@@ -80,3 +80,9 @@
   untracked = yellow # Default is red
 [credential]
 	helper = osxkeychain
+[includeIf "gitdir:~/GitHub/astorije/"]
+  path = .gitconfig_perso
+[includeIf "gitdir:~/GitHub/thelounge/"]
+  path = .gitconfig_perso
+[includeIf "gitdir:/var/folders/"]
+  path = .gitconfig_cht
