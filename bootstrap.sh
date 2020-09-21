@@ -4,7 +4,12 @@ set -e # Stop execution at first error
 
 dotfiles="$PWD"
 
-brew install bash-completion diff-so-fancy git gnupg pinentry-mac
+brew install \
+  bash-completion \
+  git diff-so-fancy gnupg pinentry-mac \
+  yarn
+
+brew cask install visual-studio-code-insiders
 
 ln -sf ${dotfiles}/bash/bash_aliases ~/.bash_aliases
 ln -sf ${dotfiles}/bash/bashrc ~/.bashrc
