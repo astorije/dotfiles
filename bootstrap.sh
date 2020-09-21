@@ -24,6 +24,7 @@ ln -sf ${dotfiles}/git/.gitignore_global ~/.gitignore_global
 
 # Git signing with GPG
 brew link --overwrite gnupg
+mkdir ~/.gnupg
 ln -sf ${dotfiles}/git/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 killall gpg-agent
 
