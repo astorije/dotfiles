@@ -1,3 +1,6 @@
 [user]
   email = jeremie@astori.fr
   signingkey = B9A4F245CD67BDE8
+[credential "https://github.com"]
+  helper = cache --timeout=21600
+  username = astorije

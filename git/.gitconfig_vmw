@@ -1,6 +1,6 @@
 [user]
-  email = jeremie@cloudhealthtech.com
-  signingkey = 2262DE79D3DD50EF
+  email = jastori@vmware.com
+  signingkey = D7886A3A7B0F1735
 [credential "https://github.com"]
   helper = cache --timeout=21600
   username = astorije-vmware

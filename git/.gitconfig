@@ -15,6 +15,7 @@
 [alias]
   # Identities
   cht = "!git config user.email \"jeremie@cloudhealthtech.com\" && git config user.signingkey 2262DE79D3DD50EF"
+  vmw = "!git config user.email \"jastori@vmware.com\" && git config user.signingkey D7886A3A7B0F1735"
   perso = "!git config user.email \"jeremie@astori.fr\" && git config user.signingkey B9A4F245CD67BDE8"
 
   pl = pull
@@ -60,9 +61,6 @@
   # line as a strong hint that the contents before and after it belong to
   # logically separate units. It is still experimental.
   compactionHeuristic = true
-[credential "https://github.com"]
-  helper = cache --timeout=21600
-  username = astorije
 [diff-so-fancy]
   # Do not color the first block of an empty line.
   markEmptyLines = false
@@ -82,7 +80,11 @@
 	helper = osxkeychain
 [includeIf "gitdir:~/GitHub/astorije/"]
   path = .gitconfig_perso
+[includeIf "gitdir:~/GitHub/CloudHealth/"]
+  path = .gitconfig_vmw
 [includeIf "gitdir:~/GitHub/thelounge/"]
   path = .gitconfig_perso
 [includeIf "gitdir:/private/var/folders/"]
-  path = .gitconfig_cht
+  path = .gitconfig_vmw
+[hub]
+  protocol = https
