@@ -19,12 +19,14 @@ ln -sf ${dotfiles}/bash/inputrc ~/.inputrc
 # Git
 ln -sf ${dotfiles}/git/.gitconfig ~/.gitconfig
 ln -sf ${dotfiles}/git/.gitconfig_cht ~/.gitconfig_cht
+ln -sf ${dotfiles}/git/.gitconfig_vmw ~/.gitconfig_vmw
 ln -sf ${dotfiles}/git/.gitconfig_perso ~/.gitconfig_perso
 ln -sf ${dotfiles}/git/.gitignore_global ~/.gitignore_global
 
 # Git signing with GPG
 brew link --overwrite gnupg
 mkdir ~/.gnupg
+chmod 700 ~/.gnupg
 ln -sf ${dotfiles}/git/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 killall gpg-agent
 
