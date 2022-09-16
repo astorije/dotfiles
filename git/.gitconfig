@@ -32,21 +32,21 @@
 
   # Checkout
   cb = "!f() { git checkout -b astorije/$@; }; f"
-  cm = checkout master
+  cm = checkout main
   co = checkout
 
   # Branch
-  delete-merged = "!git branch --merged | grep -v \"^\\s*master$\" | grep -v \"\\*\" | xargs -n 1 git branch -d"
+  delete-merged = "!git branch --merged | grep -v \"^\\s*main$\" | grep -v \"\\*\" | xargs -n 1 git branch -d"
   dm = !git delete-merged
   pru = remote prune origin
 
   # Rebase
   rb = rebase
-  rbm = rebase master
+  rbm = rebase main
   ra = rebase --abort
   rc = rebase --continue
   ri = rebase --interactive
-  rim = rebase --interactive master
+  rim = rebase --interactive main
 
   st = status
 
