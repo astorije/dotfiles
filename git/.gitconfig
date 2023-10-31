@@ -88,3 +88,5 @@
   path = .gitconfig_vmw
 [hub]
   protocol = https
+[init]
+	defaultBranch = main
