@@ -28,7 +28,7 @@
 
   # Commit
   ca = commit --amend --no-edit
-  ci = commit --signoff --message
+  ci = commit --message
 
   # Checkout
   cb = "!f() { git checkout -b astorije/$@; }; f"
